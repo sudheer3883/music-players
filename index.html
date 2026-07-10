@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="outer">
+      <div class="img-box">
+        <img src="./images/afgaan.jpg" alt="no image" />
+      </div>
+      <marquee
+        scrollamount="10"
+        style="
+           color:black;
+          font-size: 18px;
+         font-weight: bold;
+          font-style: italic;
+           text-shadow: 0 0 10px gold;  
+        "
+      >
+    Afghan Jalebi (Ya Baba)
+      </marquee>
+      <audio src="./song/song1.mp3"  id="audio"></audio>
+     
+<input type="range" id="progress" min="0" max="100" value="0">
+
+<div class="time">
+    <span id="current">0:00</span>
+    <span id="total">0:00</span>
+</div>
+
+      <div class="btn-action">
+        <i class="fa-solid fa-backward" onclick="pre()"></i>
+        <i class="fa-solid fa-play" onclick="aplay()"></i>
+        <i class="fa-solid fa-pause" onclick="apause()"></i>
+        <i class="fa-solid fa-forward" onclick="nxt()"></i>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
