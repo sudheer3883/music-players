@@ -1,8 +1,7 @@
 # 🎵 Music Player
 
 A modern and responsive **Music Player** built using **HTML, CSS, and JavaScript**. It offers a clean user interface with essential music playback controls and works directly in the browser without any backend.
-
-## 🚀 Live Demo
+ 🚀 Live Demo
 
 🌐 **Live Website:** https://sudheer3883.github.io/music-players/
 
